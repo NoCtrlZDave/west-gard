@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Westgard Diagnostics - Modern Medical Laboratory & Diagnostics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* MODERN DESIGN SYSTEM - Same as main page */
+        :root {
+            /* Color Palette */
+            --primary: #e63946;
+            --primary-dark: #d00000;
+            --primary-light: #ff6b6b;
+            --secondary: #1d3557;
+            --accent: #457b9d;
+            --light: #f1faee;
+            --dark: #2d3748;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-300: #dee2e6;
+            --gray-400: #ced4da;
+            --gray-500: #adb5bd;
+            --gray-600: #6c757d;
+            --gray-700: #495057;
+            --gray-800: #343a40;
+            --white: #ffffff;
+            --black: #000000;
+
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+            /* Transitions */
+            --transition-fast: 0.2s ease;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Borders */
+            --radius-sm: 6px;
+            --radius: 10px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+        }
+
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--gray-700);
+            background-color: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-md);
+            color: var(--secondary);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: var(--radius-full);
+        }
+
+        h3 {
+            font-size: 1.75rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: var(--space-md);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        ul,
+        ol {
+            margin-bottom: var(--space-md);
+            padding-left: var(--space-lg);
+        }
+
+        li {
+            margin-bottom: var(--space-sm);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: var(--space-3xl) 0;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 2rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            outline: none;
+            font-family: var(--font-primary);
+            gap: 0.5rem;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-white:hover {
+            background: var(--gray-100);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-large {
+            padding: 1.125rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-icon {
+            padding: 0.75rem;
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-full);
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem var(--space-lg);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.25rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            font-weight: 400;
+            font-family: var(--font-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: var(--space-xl);
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+            border-radius: var(--radius-full);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius);
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--gray-100);
+        }
+
+        /* CONTACT HERO */
+        .contact-hero {
+            position: relative;
+            padding-top: 160px;
+            padding-bottom: var(--space-3xl);
+            background: linear-gradient(135deg, rgba(29, 53, 87, 0.95), rgba(69, 123, 157, 0.85)),
+                url('https://images.unsplash.com/photo-1586773860418-dc22f8b874bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            color: var(--white);
+            margin-bottom: var(--space-lg);
+        }
+
+        .contact-hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto var(--space-xl);
+            opacity: 0.9;
+        }
+
+        .contact-cta {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        /* CONTACT INFO SECTION */
+        .contact-info-section {
+            background: var(--gray-100);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .contact-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            border: 1px solid var(--gray-200);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-lg);
+            color: var(--white);
+            font-size: 2rem;
+        }
+
+        .contact-card h3 {
+            color: var(--secondary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .contact-link {
+            color: var(--primary);
+            font-weight: 600;
+            display: inline-block;
+            margin-top: var(--space-sm);
+        }
+
+        .contact-link:hover {
+            color: var(--primary-dark);
+        }
+
+        /* CONTACT FORM & DETAILS SECTION */
+        .contact-form-section {
+            background: var(--white);
+        }
+
+        .contact-form-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--space-3xl);
+        }
+
+        .contact-details {
+            background: var(--secondary);
+            color: var(--white);
+            padding: var(--space-2xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            height: fit-content;
+        }
+
+        .contact-details h3 {
+            color: var(--white);
+            margin-bottom: var(--space-xl);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-lg);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        .contact-item-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-light);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .business-hours {
+            margin-top: var(--space-xl);
+        }
+
+        .hours-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--space-sm);
+            padding-bottom: var(--space-sm);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hours-list li:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        .hours-day {
+            font-weight: 500;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+        }
+
+        .social-link {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.125rem;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .form-container {
+            background: var(--white);
+            padding: var(--space-2xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-header {
+            margin-bottom: var(--space-xl);
+        }
+
+        .form-header h3 {
+            margin-bottom: var(--space-sm);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-lg);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-lg);
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--space-sm);
+            font-weight: 500;
+            color: var(--secondary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 1px solid var(--gray-300);
+            border-radius: var(--radius);
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--gray-100);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236c757d' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 16px 12px;
+            padding-right: 2.5rem;
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--space-xl);
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .form-note {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        /* MAP SECTION */
+        .map-section {
+            padding: var(--space-3xl) 0;
+            background: var(--gray-100);
+        }
+
+        .map-container {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 500px;
+        }
+
+        #google-map {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .map-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .map-info-card {
+            background: var(--white);
+            padding: var(--space-lg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary);
+        }
+
+        /* FAQ SECTION */
+        .faq-section {
+            background: var(--white);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: var(--space-md);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: var(--space-lg);
+            background: var(--gray-100);
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--gray-200);
+        }
+
+        .faq-question.active {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .faq-answer {
+            padding: 0 var(--space-lg);
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition-slow);
+        }
+
+        .faq-answer.active {
+            padding: var(--space-lg);
+            max-height: 500px;
+        }
+
+        .faq-toggle {
+            transition: var(--transition);
+        }
+
+        .faq-question.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        /* VISIT GUIDANCE */
+        .visit-guidance {
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: var(--white);
+        }
+
+        .visit-guidance h2,
+        .visit-guidance h3 {
+            color: var(--white);
+        }
+
+        .visit-guidance h2::after {
+            background: var(--white);
+        }
+
+        .guidance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .guidance-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .guidance-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .guidance-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--white);
+            color: var(--primary);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin: 0 auto var(--space-lg);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--secondary);
+            color: var(--white);
+            padding: var(--space-3xl) 0 var(--space-lg);
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--space-3xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .footer-logo .logo {
+            color: var(--white);
+        }
+
+        .footer-tagline {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+
+        .footer-links h3,
+        .footer-hours h3 {
+            color: var(--white);
+            font-size: 1.125rem;
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer-links a {
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--primary-light);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.875rem;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.25rem;
+            }
+
+            .contact-form-container {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-2xl);
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: var(--space-2xl) 0;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: var(--space-xl);
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .contact-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-footer {
+                flex-direction: column;
+                gap: var(--space-lg);
+                align-items: stretch;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .container {
+                padding: 0 var(--space-md);
+            }
+        }
+
+        /* UTILITY CLASSES */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .mt-0 {
+            margin-top: 0;
+        }
+
+        .opacity-80 {
+            opacity: 0.8;
+        }
+
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: var(--space-md);
+            border-radius: var(--radius);
+            border: 1px solid #c3e6cb;
+            margin-bottom: var(--space-lg);
+        }
+
+        .error-message {
+            display: none;
+            background: #f8d7da;
+            color: #721c24;
+            padding: var(--space-md);
+            border-radius: var(--radius);
+            border: 1px solid #f5c6cb;
+            margin-bottom: var(--space-lg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="logo-text">
+                    Westgard <span>Diagnostics</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:08132762570" class="btn btn-primary btn-icon">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get in Touch With Us</h1>
+            <p class="opacity-80">We're here to assist with all your diagnostic needs. Contact us via phone, email, or
+                visit our facility in Owerri for reliable medical testing and expert consultation.</p>
+
+            <div class="contact-cta">
+                <a href="tel:08132762570" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> Call Now: 0813 276 2570
+                </a>
+                <a href="#appointment-form" class="btn btn-primary btn-large">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Multiple Ways to Reach Us</h2>
+                <p>Choose your preferred method of contact. We're available to assist you with appointments, test
+                    results, and any questions you may have.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone Support</h3>
+                    <p>Speak directly with our medical team for immediate assistance, appointment scheduling, and
+                        emergency consultations.</p>
+                    <a href="tel:08132762570" class="contact-link">0813 276 2570</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us detailed inquiries, test requests, or feedback. We respond to all emails within 24 hours.
+                    </p>
+                    <a href="mailto:westgardmedicalservices@gmail.com"
+                        class="contact-link">westgardmedicalservices@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Message us on WhatsApp for quick queries, appointment confirmations, and test result
+                        notifications.</p>
+                    <a href="https://wa.me/2348132762570" class="contact-link" target="_blank">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Details Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="contact-details">
+                    <h3>Contact Information</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Opposite Ejinkeonye Street, Area 'N', Zone 2 (B49/72), World Bank Housing Estate, Owerri,
+                                Imo State, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone Numbers</h4>
+                            <p>0813 276 2570<br>0703 123 4567 (Emergency)<br>0832 987 6543 (Admin)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Addresses</h4>
+                            <p>westgardmedicalservices@gmail.com<br>info@westgarddiagnostics.com<br>appointments@westgarddiagnostics.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="hours-day">Monday - Friday</span>
+                                <span>8:00 AM - 8:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="hours-day">Saturday</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="hours-day">Sunday</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="hours-day">Emergency Services</span>
+                                <span>24/7 Available</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://instagram.com/westgardmedicalservices" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/2348132762570" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com/westgarddiagnostics" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:westgardmedicalservices@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="form-container" id="appointment-form">
+                    <div class="form-header">
+                        <h3>Send Us a Message</h3>
+                        <p class="opacity-80">Fill out the form below and we'll get back to you within 24 hours. For
+                            urgent matters, please call us directly.</p>
+                    </div>
+
+                    <div id="successMessage" class="success-message">
+                        <i class="fas fa-check-circle"></i> Thank you for your message! We'll contact you within 24
+                        hours.
+                    </div>
+
+                    <div id="errorMessage" class="error-message">
+                        <i class="fas fa-exclamation-circle"></i> There was an error submitting your form. Please try
+                        again or call us directly.
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your full name"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-control"
+                                    placeholder="Enter your email address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select id="subject" class="form-control">
+                                    <option value="">Select a subject</option>
+                                    <option value="appointment">Book an Appointment</option>
+                                    <option value="test-results">Test Results Inquiry</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="billing">Billing & Insurance</option>
+                                    <option value="feedback">Feedback & Suggestions</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" class="form-control"
+                                    placeholder="Please provide details about your inquiry..." rows="6"
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="preferred-contact" class="form-label">Preferred Contact Method</label>
+                                <div style="display: flex; gap: var(--space-lg); flex-wrap: wrap;">
+                                    <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                                        <input type="radio" name="contact-method" value="phone" checked>
+                                        <span>Phone Call</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                                        <input type="radio" name="contact-method" value="whatsapp">
+                                        <span>WhatsApp</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                                        <input type="radio" name="contact-method" value="email">
+                                        <span>Email</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                                        <input type="radio" name="contact-method" value="sms">
+                                        <span>SMS</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-footer">
+                            <div class="form-note">
+                                <p><i class="fas fa-shield-alt"></i> Your information is secure and confidential. We do
+                                    not share your data with third parties.</p>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Our Location</h2>
+                <p>Visit our facility in Owerri for comprehensive diagnostic services. We're conveniently located in the
+                    World Bank Housing Estate with ample parking available.</p>
+            </div>
+
+            <div class="map-container">
+                <iframe id="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.231169015095!2d7.019119074004364!3d5.485318434368892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042598c4c3f6a4d%3A0x7cbf61bce8377b31!2sWorld%20Bank%20Housing%20Estate%2C%20Owerri%2C%20Imo%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1680000000000!5m2!1sen!2sng"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="map-info">
+                <div class="map-info-card">
+                    <h4><i class="fas fa-car"></i> Parking Information</h4>
+                    <p>Free dedicated parking available on-site for patients and visitors. Ample space for cars and
+                        motorcycles with security personnel on duty.</p>
+                </div>
+
+                <div class="map-info-card">
+                    <h4><i class="fas fa-bus"></i> Public Transport</h4>
+                    <p>Easily accessible via public transport. Major bus routes stop near the World Bank Housing Estate
+                        entrance. Tricycles (Keke) available to the exact location.</p>
+                </div>
+
+                <div class="map-info-card">
+                    <h4><i class="fas fa-wheelchair"></i> Accessibility</h4>
+                    <p>Wheelchair-accessible facility with ramps, wide doorways, and accessible restrooms. Assistance
+                        available for patients with mobility challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Guidance -->
+    <section class="visit-guidance">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planning Your Visit</h2>
+                <p class="opacity-80">To ensure a smooth experience at our facility, please follow these guidelines when
+                    visiting us.</p>
+            </div>
+
+            <div class="guidance-grid">
+                <div class="guidance-card">
+                    <div class="guidance-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Appointments</h3>
+                    <p>While walk-ins are welcome, we recommend scheduling appointments for specialized tests to
+                        minimize wait times.</p>
+                </div>
+
+                <div class="guidance-card">
+                    <div class="guidance-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Required Documents</h3>
+                    <p>Bring your doctor's referral (if any), previous test results, valid ID, and health insurance
+                        information.</p>
+                </div>
+
+                <div class="guidance-card">
+                    <div class="guidance-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Arrival Time</h3>
+                    <p>Please arrive 15 minutes before your scheduled appointment to complete necessary paperwork and
+                        preparation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about contacting us, visiting our facility, and our services.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are your operating hours and do you offer emergency services?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our regular operating hours are:
+                        <ul>
+                            <li><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</li>
+                            <li><strong>Saturday:</strong> 9:00 AM - 6:00 PM</li>
+                            <li><strong>Sunday:</strong> 10:00 AM - 4:00 PM</li>
+                        </ul>
+                        <strong>Emergency services are available 24/7.</strong> For medical emergencies requiring
+                        immediate diagnostic testing outside regular hours, please call our emergency line at 0703 123
+                        4567. Our on-call medical team will assist you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does it take to get test results and how are they delivered?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Turnaround times vary by test type:
+                        <ul>
+                            <li><strong>Routine blood tests:</strong> 4-6 hours</li>
+                            <li><strong>Basic imaging (X-ray):</strong> 24 hours</li>
+                            <li><strong>Advanced tests:</strong> 24-48 hours</li>
+                            <li><strong>DNA tests:</strong> 5-7 working days</li>
+                        </ul>
+                        Results are delivered through your preferred method (phone call, WhatsApp, email, or SMS).
+                        You'll receive a digital copy via email/SMS, and printed copies can be collected from our
+                        facility. Urgent results can be expedited upon request.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need an appointment or can I walk in for tests?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Both options are available:
+                        <ul>
+                            <li><strong>Walk-ins:</strong> Welcome for routine blood tests during operating hours. Wait
+                                times may vary based on patient volume.</li>
+                            <li><strong>Appointments:</strong> Required for specialized tests, imaging services
+                                (ultrasound, CT), DNA testing, and comprehensive health checkups.</li>
+                        </ul>
+                        We recommend calling ahead to schedule appointments for specialized services to ensure minimal
+                        wait times and proper preparation. You can book appointments by calling 0813 276 2570 or using
+                        our online appointment request form.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept and do you work with insurance?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept multiple payment methods:
+                        <ul>
+                            <li><strong>Cash:</strong> Nigerian Naira</li>
+                            <li><strong>Bank Transfer:</strong> All major Nigerian banks</li>
+                            <li><strong>POS:</strong> Debit/credit card payments on-site</li>
+                            <li><strong>Mobile Money:</strong> Available upon request</li>
+                        </ul>
+                        We work with several health insurance providers. Please contact our billing department at 0832
+                        987 6543 with your insurance information to verify coverage before your visit. We provide
+                        detailed receipts for insurance reimbursement claims.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I prepare for my visit and what should I bring?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To ensure a smooth visit:
+                        <ul>
+                            <li><strong>Preparation:</strong> For fasting tests, don't eat or drink (except water) for
+                                8-12 hours before your test. Follow specific instructions provided when booking.</li>
+                            <li><strong>Documents to bring:</strong> Doctor's referral (if any), previous test results,
+                                valid ID (driver's license, national ID, or passport), and health insurance information.
+                            </li>
+                            <li><strong>Medications:</strong> Continue prescribed medications unless instructed
+                                otherwise by your doctor. Inform us of all medications and supplements you're taking.
+                            </li>
+                            <li><strong>Clothing:</strong> Wear loose-fitting clothing with sleeves that can be easily
+                                rolled up for blood tests.</li>
+                        </ul>
+                        If you have questions about specific preparation for your test, call us at 0813 276 2570 before
+                        your visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="logo-text">
+                            Westgard <span>Diagnostics</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Providing trusted diagnostic services in Owerri with accuracy,
+                        reliability, and professional care since 2015.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Chemical Pathology</a></li>
+                        <li><a href="services.html">DNA Testing</a></li>
+                        <li><a href="services.html">Imaging Services</a></li>
+                        <li><a href="services.html">Fertility Profile</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-hours">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+                        <li>Saturday: 9:00 AM - 6:00 PM</li>
+                        <li>Sunday: 10:00 AM - 4:00 PM</li>
+                        <li>Emergency Services: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Westgard Medical Laboratory & Diagnostics. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const hamburgerIcon = mobileMenuBtn.querySelector('i');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-times');
+
+            // Prevent body scrolling when menu is open
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburgerIcon.classList.remove('fa-times');
+                hamburgerIcon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Get form values
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                const contactMethod = document.querySelector('input[name="contact-method"]:checked').value;
+
+                // Simple validation
+                if (!name || !phone || !message) {
+                    errorMessage.textContent = 'Please fill in all required fields.';
+                    errorMessage.style.display = 'block';
+                    successMessage.style.display = 'none';
+
+                    // Scroll to error message
+                    errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return;
+                }
+
+                // Show loading state on button
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+
+                // Simulate form submission (in a real implementation, this would be an AJAX call)
+                setTimeout(() => {
+                    // Show success message
+                    successMessage.style.display = 'block';
+                    errorMessage.style.display = 'none';
+
+                    // Reset button
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+
+                    // Reset form
+                    contactForm.reset();
+
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                }, 1500);
+            });
+        }
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('active');
+                });
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                });
+
+                // Toggle current answer
+                if (!isActive) {
+                    answer.classList.add('active');
+                    question.classList.add('active');
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = 'var(--shadow-md)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.boxShadow = 'var(--shadow-sm)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Phone number click tracking (analytics simulation)
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', () => {
+                console.log('Phone call initiated to:', link.getAttribute('href'));
+                // In a real implementation, you would send this to analytics
+            });
+        });
+    </script>
+</body>
+
+</html>

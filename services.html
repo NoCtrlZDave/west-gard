@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Westgard Diagnostics - Modern Medical Laboratory & Diagnostics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* MODERN DESIGN SYSTEM - Same as main page */
+        :root {
+            /* Color Palette */
+            --primary: #e63946;
+            --primary-dark: #d00000;
+            --primary-light: #ff6b6b;
+            --secondary: #1d3557;
+            --accent: #457b9d;
+            --light: #f1faee;
+            --dark: #2d3748;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-300: #dee2e6;
+            --gray-400: #ced4da;
+            --gray-500: #adb5bd;
+            --gray-600: #6c757d;
+            --gray-700: #495057;
+            --gray-800: #343a40;
+            --white: #ffffff;
+            --black: #000000;
+
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+            /* Transitions */
+            --transition-fast: 0.2s ease;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Borders */
+            --radius-sm: 6px;
+            --radius: 10px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+        }
+
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--gray-700);
+            background-color: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-md);
+            color: var(--secondary);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: var(--radius-full);
+        }
+
+        h3 {
+            font-size: 1.75rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: var(--space-md);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        ul,
+        ol {
+            margin-bottom: var(--space-md);
+            padding-left: var(--space-lg);
+        }
+
+        li {
+            margin-bottom: var(--space-sm);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: var(--space-3xl) 0;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 2rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            outline: none;
+            font-family: var(--font-primary);
+            gap: 0.5rem;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-white:hover {
+            background: var(--gray-100);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-large {
+            padding: 1.125rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-icon {
+            padding: 0.75rem;
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-full);
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem var(--space-lg);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.25rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            font-weight: 400;
+            font-family: var(--font-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: var(--space-xl);
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+            border-radius: var(--radius-full);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius);
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--gray-100);
+        }
+
+        /* SERVICES HERO */
+        .services-hero {
+            position: relative;
+            padding-top: 160px;
+            padding-bottom: var(--space-3xl);
+            background: linear-gradient(135deg, rgba(29, 53, 87, 0.95), rgba(69, 123, 157, 0.85)),
+                url('https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .services-hero h1 {
+            color: var(--white);
+            margin-bottom: var(--space-lg);
+        }
+
+        .services-hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto var(--space-xl);
+            opacity: 0.9;
+        }
+
+        /* SERVICES CATEGORIES */
+        .services-categories {
+            background: var(--gray-100);
+        }
+
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .category-tab {
+            padding: var(--space-md) var(--space-xl);
+            background: var(--white);
+            border-radius: var(--radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .category-tab:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .category-tab.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        .category-content {
+            display: none;
+        }
+
+        .category-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* SERVICE DETAIL */
+        .service-detail {
+            padding: var(--space-2xl);
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            margin-bottom: var(--space-xl);
+        }
+
+        .service-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-xl);
+        }
+
+        .service-icon-large {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2.5rem;
+            flex-shrink: 0;
+            margin-right: var(--space-xl);
+        }
+
+        .service-title-container {
+            flex-grow: 1;
+        }
+
+        .service-price-tag {
+            background: var(--secondary);
+            color: var(--white);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius);
+            font-weight: 700;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .service-body {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--space-2xl);
+        }
+
+        .service-description h3 {
+            color: var(--secondary);
+            margin-bottom: var(--space-md);
+        }
+
+        .service-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-description li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+
+        .service-description li i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .service-info-card {
+            background: var(--gray-100);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            height: fit-content;
+        }
+
+        .info-item {
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-lg);
+            border-bottom: 1px solid var(--gray-300);
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: var(--space-xs);
+        }
+
+        /* PREPARATION GUIDE */
+        .preparation-guide {
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: var(--white);
+        }
+
+        .preparation-guide h2,
+        .preparation-guide h3 {
+            color: var(--white);
+        }
+
+        .preparation-guide h2::after {
+            background: var(--white);
+        }
+
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .guide-step {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .guide-step:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto var(--space-lg);
+        }
+
+        /* PRICING TABLE */
+        .pricing-section {
+            background: var(--gray-100);
+        }
+
+        .pricing-table {
+            overflow-x: auto;
+            margin-top: var(--space-2xl);
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+        }
+
+        .pricing-table table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: var(--space-lg);
+            text-align: left;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .pricing-table th {
+            background: var(--secondary);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-table tr:hover {
+            background: var(--gray-100);
+        }
+
+        .price-tag {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* FAQ SECTION */
+        .faq-section {
+            background: var(--white);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: var(--space-md);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: var(--space-lg);
+            background: var(--gray-100);
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--gray-200);
+        }
+
+        .faq-question.active {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .faq-answer {
+            padding: 0 var(--space-lg);
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition-slow);
+        }
+
+        .faq-answer.active {
+            padding: var(--space-lg);
+            max-height: 500px;
+        }
+
+        .faq-toggle {
+            transition: var(--transition);
+        }
+
+        .faq-question.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        /* CTA SECTION */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2::after {
+            background: var(--white);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+            flex-wrap: wrap;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--secondary);
+            color: var(--white);
+            padding: var(--space-3xl) 0 var(--space-lg);
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--space-3xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .footer-logo .logo {
+            color: var(--white);
+        }
+
+        .footer-tagline {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+
+        .footer-links h3,
+        .footer-hours h3 {
+            color: var(--white);
+            font-size: 1.125rem;
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer-links a {
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--primary-light);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.875rem;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.25rem;
+            }
+
+            .service-body {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-2xl);
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: var(--space-2xl) 0;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: var(--space-xl);
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .service-header {
+                flex-direction: column;
+                gap: var(--space-lg);
+            }
+
+            .service-icon-large {
+                margin-right: 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .container {
+                padding: 0 var(--space-md);
+            }
+
+            .category-tab {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* UTILITY CLASSES */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .mt-0 {
+            margin-top: 0;
+        }
+
+        .opacity-80 {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="logo-text">
+                    Westgard <span>Diagnostics</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:08132762570" class="btn btn-primary btn-icon">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <h1>Our Diagnostic Services</h1>
+            <p class="opacity-80">Comprehensive medical testing and diagnostics using advanced technology, expert
+                analysis, and a patient-centered approach to healthcare in Owerri.</p>
+            <a href="#contact" class="btn btn-white btn-large">
+                <i class="fas fa-calendar-check"></i> Book Appointment Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Categories -->
+    <section class="services-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Diagnostic Services</h2>
+                <p>Browse our range of specialized diagnostic services designed to meet your healthcare needs with
+                    precision and care.</p>
+            </div>
+
+            <div class="category-tabs">
+                <div class="category-tab active" data-category="pathology">
+                    <i class="fas fa-flask"></i> Chemical Pathology
+                </div>
+                <div class="category-tab" data-category="imaging">
+                    <i class="fas fa-x-ray"></i> Imaging Services
+                </div>
+                <div class="category-tab" data-category="dna">
+                    <i class="fas fa-dna"></i> DNA Testing
+                </div>
+                <div class="category-tab" data-category="specialized">
+                    <i class="fas fa-heartbeat"></i> Specialized Tests
+                </div>
+            </div>
+
+            <!-- Chemical Pathology Category -->
+            <div class="category-content active" id="pathology">
+                <div class="service-detail">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h2>Chemical Pathology & Laboratory Testing</h2>
+                            <p>Comprehensive analysis of bodily fluids to assess organ function, detect diseases, and
+                                monitor treatment effectiveness.</p>
+                        </div>
+                        <div class="service-price-tag">From ₦5,000</div>
+                    </div>
+
+                    <div class="service-body">
+                        <div class="service-description">
+                            <h3>Overview</h3>
+                            <p>Our chemical pathology department utilizes state-of-the-art automated analyzers to
+                                provide accurate and timely results for a wide range of tests. We follow stringent
+                                quality control measures to ensure reliability.</p>
+
+                            <h3>Available Tests Include:</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <strong>Complete Blood Count (CBC):</strong>
+                                    Evaluates overall health and detects disorders like anemia, infection, and leukemia.
+                                </li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Liver Function Tests:</strong> Assesses
+                                    liver health and detects conditions like hepatitis, cirrhosis, and liver damage.
+                                </li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Kidney Function Tests:</strong> Measures
+                                    kidney performance and detects renal diseases.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Lipid Profile:</strong> Evaluates
+                                    cholesterol levels and assesses cardiovascular risk.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Blood Glucose Tests:</strong> Monitors
+                                    diabetes management and screens for glucose metabolism disorders.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Thyroid Function Tests:</strong>
+                                    Assesses thyroid gland activity and detects disorders like hypothyroidism and
+                                    hyperthyroidism.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Electrolyte Panel:</strong> Measures
+                                    essential minerals in the blood to evaluate hydration and organ function.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Hormone Assays:</strong> Evaluates
+                                    reproductive health, adrenal function, and endocrine disorders.</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-info-card">
+                            <div class="info-item">
+                                <div class="info-label">Turnaround Time</div>
+                                <p>4-6 hours for most tests</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Sample Required</div>
+                                <p>Blood, urine, or other bodily fluids</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Fasting Required</div>
+                                <p>8-12 hours for some tests (glucose, lipids)</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Results Delivery</div>
+                                <p>Digital report via email/SMS + printed copy</p>
+                            </div>
+                            <a href="#contact" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-calendar-alt"></i> Schedule Test
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imaging Services Category -->
+            <div class="category-content" id="imaging">
+                <div class="service-detail">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h2>Medical Imaging Services</h2>
+                            <p>Advanced diagnostic imaging using state-of-the-art technology for accurate visualization
+                                and diagnosis of internal conditions.</p>
+                        </div>
+                        <div class="service-price-tag">From ₦8,000</div>
+                    </div>
+
+                    <div class="service-body">
+                        <div class="service-description">
+                            <h3>Overview</h3>
+                            <p>Our imaging department is equipped with the latest digital technology to provide
+                                high-resolution images with minimal radiation exposure. All procedures are performed by
+                                certified radiographers and interpreted by experienced radiologists.</p>
+
+                            <h3>Available Imaging Services:</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <strong>Digital X-Ray:</strong> For bone
+                                    fractures, chest conditions, dental issues, and abdominal examinations.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Ultrasound Scans:</strong> Non-invasive
+                                    imaging for pregnancy monitoring, abdominal organs, thyroid, breast, and
+                                    musculoskeletal conditions.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Doppler Ultrasound:</strong> Evaluates
+                                    blood flow in arteries and veins to detect clots, blockages, and vascular
+                                    conditions.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>CT Scan (Computed Tomography):</strong>
+                                    Detailed cross-sectional imaging for trauma, cancer detection, internal bleeding,
+                                    and complex fractures.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>MRI (Magnetic Resonance
+                                        Imaging):</strong> High-resolution imaging of soft tissues, brain, spinal cord,
+                                    joints, and internal organs without radiation.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Echocardiography:</strong> Ultrasound of
+                                    the heart to assess structure, function, and detect cardiovascular diseases.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Mammography:</strong> Specialized X-ray
+                                    for breast cancer screening and diagnosis.</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-info-card">
+                            <div class="info-item">
+                                <div class="info-label">Appointment Needed</div>
+                                <p>Required for CT, MRI, and Ultrasound</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Preparation</div>
+                                <p>Varies by test (fasting, contrast agents)</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Report Time</div>
+                                <p>24-48 hours for detailed interpretation</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Results Delivery</div>
+                                <p>Digital images + radiologist report on CD/USB</p>
+                            </div>
+                            <a href="#contact" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-calendar-alt"></i> Schedule Imaging
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DNA Testing Category -->
+            <div class="category-content" id="dna">
+                <div class="service-detail">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h2>DNA & Genetic Testing</h2>
+                            <p>Advanced genetic analysis for paternity testing, ancestry, genetic disorders, and
+                                personalized healthcare insights.</p>
+                        </div>
+                        <div class="service-price-tag">From ₦25,000</div>
+                    </div>
+
+                    <div class="service-body">
+                        <div class="service-description">
+                            <h3>Overview</h3>
+                            <p>Our DNA laboratory uses cutting-edge PCR technology and genetic sequencing to provide
+                                accurate, confidential, and legally admissible results. We maintain strict chain of
+                                custody protocols for legal cases.</p>
+
+                            <h3>DNA Testing Services:</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <strong>Paternity Testing:</strong> Determines
+                                    biological fatherhood with 99.99% accuracy for peace of mind or legal purposes.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Maternity Testing:</strong> Confirms
+                                    biological relationship between mother and child.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Sibling Testing:</strong> Establishes
+                                    biological relationship between siblings.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Ancestry & Ethnicity Testing:</strong>
+                                    Traces genetic heritage and geographical origins.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Genetic Predisposition Testing:</strong>
+                                    Identifies increased risk for hereditary conditions like cancer, cardiovascular
+                                    diseases, and neurological disorders.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Carrier Screening:</strong> Tests for
+                                    genetic mutations that could be passed to children (cystic fibrosis, sickle cell,
+                                    etc.).</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Pharmacogenetic Testing:</strong>
+                                    Determines how genes affect response to medications for personalized treatment.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Forensic DNA Testing:</strong> For legal
+                                    cases, immigration, and identification purposes.</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-info-card">
+                            <div class="info-item">
+                                <div class="info-label">Accuracy</div>
+                                <p>99.99% for relationship tests</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Sample Type</div>
+                                <p>Buccal swab (cheek cells) or blood</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Turnaround Time</div>
+                                <p>5-7 working days</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Confidentiality</div>
+                                <p>Strict privacy protocols maintained</p>
+                            </div>
+                            <a href="#contact" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-calendar-alt"></i> Schedule DNA Test
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specialized Tests Category -->
+            <div class="category-content" id="specialized">
+                <div class="service-detail">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h2>Specialized Diagnostic Tests</h2>
+                            <p>Advanced testing for specific health conditions, infectious diseases, fertility, and
+                                comprehensive health screenings.</p>
+                        </div>
+                        <div class="service-price-tag">From ₦10,000</div>
+                    </div>
+
+                    <div class="service-body">
+                        <div class="service-description">
+                            <h3>Overview</h3>
+                            <p>Our specialized testing department offers comprehensive panels and targeted tests for
+                                specific health concerns, providing detailed insights for personalized healthcare
+                                management.</p>
+
+                            <h3>Specialized Testing Services:</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <strong>Fertility Profile:</strong>
+                                    Comprehensive testing for couples experiencing fertility challenges (hormone tests,
+                                    semen analysis, ovulation tracking).</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Infectious Disease Panel:</strong>
+                                    Testing for HIV, hepatitis B & C, tuberculosis, malaria, typhoid, and other
+                                    infectious agents.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Cancer Marker Tests:</strong> Screening
+                                    for tumor markers associated with prostate, breast, ovarian, colon, and liver
+                                    cancers.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Autoimmune Disease Testing:</strong>
+                                    Diagnoses conditions like rheumatoid arthritis, lupus, celiac disease, and thyroid
+                                    autoimmunity.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Allergy Testing:</strong> Identifies
+                                    specific allergens causing respiratory, skin, or food allergies.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Cardiac Risk Panel:</strong>
+                                    Comprehensive assessment of cardiovascular health including advanced lipid testing
+                                    and inflammation markers.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Vitamin & Mineral Deficiency
+                                        Tests:</strong> Evaluates levels of vitamins (D, B12, folate) and minerals
+                                    (iron, calcium, magnesium).</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Executive Health Checkup:</strong>
+                                    Comprehensive annual health assessment for preventive healthcare.</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-info-card">
+                            <div class="info-item">
+                                <div class="info-label">Test Panels</div>
+                                <p>Customizable based on health needs</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Preparation</div>
+                                <p>Specific instructions provided</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Turnaround Time</div>
+                                <p>Varies by test (24 hours to 1 week)</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Consultation</div>
+                                <p>Included with comprehensive panels</p>
+                            </div>
+                            <a href="#contact" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-calendar-alt"></i> Schedule Specialized Test
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preparation Guide -->
+    <section class="preparation-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2>Test Preparation Guide</h2>
+                <p class="opacity-80">Proper preparation ensures accurate test results. Follow these guidelines based on
+                    your scheduled test type.</p>
+            </div>
+
+            <div class="guide-steps">
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <h3>Fasting Requirements</h3>
+                    <p>For blood glucose and lipid tests, fast for 8-12 hours (water only). Most other blood tests don't
+                        require fasting unless specified.</p>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <h3>Medication Guidelines</h3>
+                    <p>Continue prescribed medications unless instructed otherwise by your doctor. Inform us of all
+                        medications and supplements you're taking.</p>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <h3>Hydration</h3>
+                    <p>Drink plenty of water before blood tests (unless fasting). Well-hydrated veins make blood
+                        collection easier and more comfortable.</p>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <h3>Clothing & Accessories</h3>
+                    <p>Wear loose-fitting clothing with sleeves that can be easily rolled up. Avoid tight bands or
+                        jewelry on the arm being used for blood draw.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--space-2xl);">
+                <a href="tel:08132762570" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> Call for Specific Instructions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Service Pricing</h2>
+                <p>Transparent pricing for our most requested diagnostic tests. Contact us for a complete price list or
+                    package discounts.</p>
+            </div>
+
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Test/Service</th>
+                            <th>Description</th>
+                            <th>Price Range</th>
+                            <th>Turnaround Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Complete Blood Count (CBC)</strong></td>
+                            <td>Evaluates overall health and detects various disorders</td>
+                            <td class="price-tag">₦5,000 - ₦7,000</td>
+                            <td>4-6 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Liver Function Tests</strong></td>
+                            <td>Assesses liver health and detects conditions</td>
+                            <td class="price-tag">₦8,000 - ₦12,000</td>
+                            <td>4-6 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kidney Function Tests</strong></td>
+                            <td>Measures kidney performance and detects renal diseases</td>
+                            <td class="price-tag">₦7,000 - ₦10,000</td>
+                            <td>4-6 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Digital X-Ray</strong></td>
+                            <td>Bone fractures, chest conditions, dental issues</td>
+                            <td class="price-tag">₦8,000 - ₦15,000</td>
+                            <td>24 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ultrasound Scan</strong></td>
+                            <td>Non-invasive imaging for organs and pregnancy</td>
+                            <td class="price-tag">₦12,000 - ₦25,000</td>
+                            <td>24-48 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paternity Test</strong></td>
+                            <td>DNA relationship testing with 99.99% accuracy</td>
+                            <td class="price-tag">₦25,000 - ₦45,000</td>
+                            <td>5-7 days</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fertility Profile (Basic)</strong></td>
+                            <td>Hormone tests for fertility assessment</td>
+                            <td class="price-tag">₦15,000 - ₦25,000</td>
+                            <td>24-48 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Executive Health Checkup</strong></td>
+                            <td>Comprehensive annual health assessment</td>
+                            <td class="price-tag">₦35,000 - ₦60,000</td>
+                            <td>3-5 days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--space-xl);">
+                <p class="opacity-80"><strong>Note:</strong> Prices may vary based on test complexity and additional
+                    parameters. Health insurance may cover some tests. Contact us for verification.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our diagnostic services and testing procedures.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I prepare for a blood test?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For most blood tests, no special preparation is needed. However, for fasting blood tests
+                            (like glucose or lipid profile), you should not eat or drink anything except water for 8-12
+                            hours before the test. Continue taking prescribed medications unless instructed otherwise by
+                            your doctor. Drink plenty of water to stay hydrated, which makes blood collection easier.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does it take to get test results?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Turnaround times vary by test type:
+                        <ul>
+                            <li><strong>Routine blood tests:</strong> 4-6 hours</li>
+                            <li><strong>Basic imaging (X-ray):</strong> 24 hours</li>
+                            <li><strong>Advanced imaging (Ultrasound, CT):</strong> 24-48 hours</li>
+                            <li><strong>DNA tests:</strong> 5-7 working days</li>
+                            <li><strong>Specialized tests:</strong> 24 hours to 1 week depending on complexity</li>
+                        </ul>
+                        Urgent tests can often be expedited. Results are delivered digitally via email/SMS and printed
+                        copies are available for collection.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you accept health insurance?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we work with several major health insurance providers in Nigeria. Please contact our
+                            billing department at 0813 276 2570 with your insurance information to verify coverage
+                            before your visit. We also offer cash payment options and can provide detailed receipts for
+                            insurance reimbursement claims.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are appointments necessary for tests?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Walk-ins are welcome for most routine blood tests during operating hours. However,
+                            appointments are required for:
+                        <ul>
+                            <li>Imaging services (Ultrasound, CT, MRI)</li>
+                            <li>DNA testing</li>
+                            <li>Comprehensive health checkups</li>
+                            <li>Fertility testing</li>
+                        </ul>
+                        We recommend calling ahead to schedule appointments for these services to minimize wait times
+                        and ensure proper preparation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How accurate are your test results?</span>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We maintain a 99.7% accuracy rate through:
+                        <ul>
+                            <li>State-of-the-art automated equipment with regular calibration</li>
+                            <li>Stringent quality control protocols following international standards</li>
+                            <li>Certified medical professionals performing and interpreting tests</li>
+                            <li>Regular participation in external quality assurance programs</li>
+                            <li>Double-checking critical results</li>
+                        </ul>
+                        Our laboratory is accredited and follows guidelines from relevant medical authorities to ensure
+                        the highest standards of accuracy and reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready for Your Diagnostic Test?</h2>
+            <p class="opacity-80">Schedule your appointment today for accurate, timely, and reliable diagnostic
+                services.</p>
+
+            <div class="cta-buttons">
+                <a href="tel:08132762570" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> Call Now: 0813 276 2570
+                </a>
+                <a href="contact.html" class="btn btn-secondary btn-large">
+                    <i class="fas fa-envelope"></i> Send Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="logo-text">
+                            Westgard <span>Diagnostics</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Providing trusted diagnostic services in Owerri with accuracy,
+                        reliability, and professional care since 2015.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Chemical Pathology</a></li>
+                        <li><a href="services.html">DNA Testing</a></li>
+                        <li><a href="services.html">Imaging Services</a></li>
+                        <li><a href="services.html">Fertility Profile</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-hours">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+                        <li>Saturday: 9:00 AM - 6:00 PM</li>
+                        <li>Sunday: 10:00 AM - 4:00 PM</li>
+                        <li>Emergency Services: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Westgard Medical Laboratory & Diagnostics. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const hamburgerIcon = mobileMenuBtn.querySelector('i');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-times');
+
+            // Prevent body scrolling when menu is open
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburgerIcon.classList.remove('fa-times');
+                hamburgerIcon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Service Category Tabs
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const categoryContents = document.querySelectorAll('.category-content');
+
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and contents
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                categoryContents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked tab
+                tab.classList.add('active');
+
+                // Show corresponding content
+                const categoryId = tab.getAttribute('data-category');
+                document.getElementById(categoryId).classList.add('active');
+            });
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('active');
+                });
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                });
+
+                // Toggle current answer
+                if (!isActive) {
+                    answer.classList.add('active');
+                    question.classList.add('active');
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = 'var(--shadow-md)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.boxShadow = 'var(--shadow-sm)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+
+</html>
